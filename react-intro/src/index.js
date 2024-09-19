@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Form from './dd';
+import Forgetpass from './ForgetPass';
 import reportWebVitals from './reportWebVitals';
 import MyButton from './MyButton';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +11,8 @@ root.render(
   <React.StrictMode>
     <Form />
     <App />
+    <br></br>
+    <Forgetpass />
   </React.StrictMode>
 );
 
