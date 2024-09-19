@@ -1,12 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link } from "react-router-dom";
+import { useId } from 'react';
 
-function App() {
+const AuthButtons = () => {
+  const handleRegister = () => {
+    console.log('Регистрация');
+  };
+
+  const handlelLogin = () => {
+    console.log('Авторизация');
+  };
+
   return (
-    <div className='App'>
-      <h1>Hello WORLD MA NI....</h1>
-       </div>
-  );
-}
+    <div>
 
-export default App;
+    <button onClick={handleRegister}>Регистрация</button>
+                 
+    <button onClick={handlelLogin}>Авторизация</button>
+    </div>
+   
+  );
+
+
+  
+  
+};
+
+
+
+
+export default AuthButtons;
